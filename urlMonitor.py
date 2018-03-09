@@ -6,19 +6,14 @@ import requests
 import time
 
 #URL String Inludes InfluxDB Database Name
-INFLUX_URL_STRING = 'https://influx.verecloud.com/write?db=test'
-INFLUX_USERNAME = 'influx'
-INFLUX_PASSWORD = 'inmemory'
+INFLUX_URL_STRING = '#'
+INFLUX_USERNAME = '#'
+INFLUX_PASSWORD = '#'
 
 try:
-   weblist={'Prod-LB': 'https://bluesky.westconcomstor.com/resources/build_artifact.json',
-           'Prod-Portal': 'http://wc-proxy-prod/resources/build_artifact.json',
-           'Prod-Api': 'http://wcprod-bluesky:8080/nimbus4-api/build_artifact.json',
-           'Prod-SOAP': 'http://wcprod-bluesky-soap:8080/nimbus4-soap/build_artifact.json',
-           'Prod-Admin': 'http://wcprod-bluesky-B:8080/nimbus4-admin/build_artifact.json',
-           'Prod-Backend': 'http://wcprod-bluesky-apps:8080/nimbus4-backend/build_artifact.json',
-           'Prod-Backend-2': 'http://wcprod-bluesky-apps-B:8080/nimbus4-backend/build_artifact.json',
-           'Prod-OAuth': 'http://wcprod-bluesky:3000/oauth20/applications'}
+   weblist={'Prod-LB': 'https://',
+           'Prod-SOAP': 'http://',
+           'Prod-OAuth': 'http://'}
    data =[]
 
    def getEpochTime():
